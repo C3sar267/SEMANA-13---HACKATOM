@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/btn-modal.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <p style="font-size: 35px;
+                    text-transform: uppercase;
+                    margin: 0;
+                    margin-top: 0px;
+                    font-weight: bold;">LOGO</p>
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/carrito.png" id="img-carrito" style="width:50px; height:auto;">
+                            <div id="carrito">
+
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>PRACTICE</h2>
+                        <p>Hackatom Semana - 13</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Pet Salon - Droovers</h1>
+        <div class="row">
+            
+            <div class="four columns">
+                
+                <div class="card">
+
+
+                    <!-- AQUI M ODAL CERRA ITEM-->
+
+                    <a id="btnModal" href="#" class="eliminarItems">x</a>
+
+                    <div id="tvesModal" class="modalContainer">
+                        <div class="modal-content">
+                            <span class="close">×</span>
+                            <h2>Pet Salón</h2>
+                            <p>¿Estas seguro que quieres eliminar a esta mascota?</p>
+                            <button id="aceptar">Aceptar</button>
+                            <button id="cerrar">Cancelar</button>
+
+                        </div>
+                    </div>
+
+                    <!-- AQUI M ODAL TERMINA ITEM-->
+                    <img src="img/PERRO-4.png" class="imagen-curso u-full-width">
+
+                    <div class="info-card">
+                        <h4>RAZA SIBERIA</h4>
+                        <p>Dog-Betovhen</p>
+                        <img src="img/slider.png">
+                        <p class="precio">s/1000 <span class="u-pull-right ">s/600</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            Al Carrito</a>
+
+                        
+
+                    </div>
+                </div>
+
+
+
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+
+                    <a id="btnModal" href="#" class="eliminarItems" data-id="2" >x</a>
+
+                        
+
+
+
+
+                    <img src="img/PERRO-3.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>RAZA DOBERMAN</h4>
+                        <p>Dog Lassy</p>
+                        <img src="img/slider.png">
+                        <p class="precio">s/1000 <span class="u-pull-right ">s/600</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/PERRO-2.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>RAZA CHICHUAHUA</h4>
+                        <p>Dog-Spot</p>
+                        <img src="img/slider.png">
+                        <p class="precio">s/1000 <span class="u-pull-right ">s/600</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+
+
+            
+        </div>
+        <!--.row-->
+        <div class="row">
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/PERRO-1.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>RAZA SIBERIANO</h4>
+                        <p>Dog-Kayluz</p>
+                        <img src="img/slider.png">
+                        <p class="precio">s/1000 <span class="u-pull-right ">s/600</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar
+                            Al Carrito</a>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+
+
+            
+
+
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/PERRO-4.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>RAZA - DOBERMAN</h4>
+                        <p>Dog - Sponja</p>
+                        <img src="img/slider.png">
+                        <p class="precio">s/1000 <span class="u-pull-right ">s/600</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/PERRO-3.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>RAZA P.ALEMAN</h4>
+                        <p>Dog - Pelussa</p>
+                        <img src="img/slider.png">
+                        <p class="precio">s/1000 <span class="u-pull-right ">s/600</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+
+        </div>
+        <!--.row-->
+      
+          
+            </div>
+
+        </div>
+        <!--.row-->
+    </div>
+
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
